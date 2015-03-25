@@ -1,0 +1,8 @@
+<div>
+  <%= link_to("New Entry", new_entry_path) %>
+  <% for entry in @entries %>
+    <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
+      <p><%= entry.date %></p>
+      <p><%= entry.contents %></p>
+  <% end %>
+</div>
