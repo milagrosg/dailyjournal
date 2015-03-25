@@ -26,4 +26,17 @@ class EntriesController < ApplicationController
     entry.update(entry_params)
     redirect_to(entry_path(entry))
   end
+
+  def destroy
+    Entry.find(params[:id]).destroy
+    flash[:success] = "Entry deleted"
+    redirect_to entries_path
+  end
 end
+
+
+  def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "User deleted"
+    redirect_to users_url
+  end

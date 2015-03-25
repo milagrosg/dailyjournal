@@ -9,6 +9,8 @@ gem 'jquery-rails', '~>4.0.3'
 gem 'turbolinks', '~>2.5.3'
 gem 'jbuilder', '~> 2.2'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bootstrap-sass', '~>3.3.4.1'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.10'
